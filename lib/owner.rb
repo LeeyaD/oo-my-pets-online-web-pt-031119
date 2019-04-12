@@ -30,6 +30,6 @@ class Owner
     if @pets[:fishes].each {|f| f == fish}
         @pets[:fishes] << fish
     end
-    #binding.pry
+    binding.pry
   end
 end
