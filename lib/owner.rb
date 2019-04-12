@@ -60,8 +60,8 @@ class Owner
   end
 
   def sell_pets
-    @pets.each do |pet_type, pet|
-      pet.each {|a| a.mood = "nervous"}
+    @pets.amp do |pet_type, pet|
+      pet.map {|a| a.mood = "nervous"}
     end
     @pets.clear
     binding.pry
