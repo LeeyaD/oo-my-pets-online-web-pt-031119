@@ -28,7 +28,7 @@ class Owner
 
   def buy_fish (fish)
     @pets[:fishes] << fish
-    @pets[:fishes][0]
+    @pets[:fishes].each {|f| f == fish}
     #binding.pry
   end
 end
