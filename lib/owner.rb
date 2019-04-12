@@ -60,7 +60,7 @@ class Owner
   end
 
   def sell_pets
-    @pets.amp do |pet_type, pet|
+    @pets.map do |pet_type, pet|
       pet.map {|a| a.mood = "nervous"}
     end
     @pets.clear
