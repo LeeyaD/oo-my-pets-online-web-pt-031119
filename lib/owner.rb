@@ -28,6 +28,5 @@ class Owner
 
   def buy_fish (fish)
     fish.owner = self
-
   end
 end
