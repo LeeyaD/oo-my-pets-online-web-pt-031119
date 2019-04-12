@@ -28,9 +28,8 @@ class Owner
 
   def buy_fish (name)
     fish = Fish.new(name)
-    if @pets[:fishes].each {|f| f == fish}
-        @pets[:fishes] << fish
+    @pets[:fishes] << fish
     end
-    binding.pry
+    #binding.pry
   end
 end
