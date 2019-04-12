@@ -26,7 +26,8 @@ class Owner
     "I am a #{@species}."
   end
 
-  def buy_fish (fish)
+  def buy_fish (name)
+    fish = Fish.new(name)
     if @pets[:fishes].each {|f| f == fish}
         @pets[:fishes] << fish
     end
