@@ -42,6 +42,7 @@ class Owner
   end
 
   def walk_dogs
-
+    @pets[:dogs]
+    binding.pry
   end
 end
