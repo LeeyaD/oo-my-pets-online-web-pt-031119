@@ -64,6 +64,6 @@ class Owner
       pet.each {|a| a.mood = "nervous"}
     end
     @pets.clear
-
+    binding.pry
   end
 end
